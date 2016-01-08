@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = "OKDriveSDK"
+  s.name             = "OKDriveSDK_IOS"
   s.version          = "0.0.1"
   s.summary          = "A short description of OKDriveSDK."
 
@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes/*.*'
-  s.resource_bundles = {
-    'OKDriveSDK' => ['Pod/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  # 'OKDriveSDK' => ['Pod/Assets/*.png']
+  #}
 
    s.public_header_files = 'Classes/*.h'
    s.frameworks ="SystemConfiguration", "CoreLocation", "CoreMotion"
