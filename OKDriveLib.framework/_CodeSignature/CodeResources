@@ -4,13 +4,30 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/OKDriveConfig.h</key>
+		<data>
+		OOrpZ9IJzoWtVnAqZgHbs1QlGvs=
+		</data>
+		<key>Headers/OKDriveSDK.h</key>
+		<data>
+		DPUvDqJA+jP8wF3TohNab8RXobI=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		5wPqqPDuiNgSo8yIeEiU+l2hh7Y=
 		</data>
 	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>Headers/OKDriveConfig.h</key>
+		<data>
+		OOrpZ9IJzoWtVnAqZgHbs1QlGvs=
+		</data>
+		<key>Headers/OKDriveSDK.h</key>
+		<data>
+		DPUvDqJA+jP8wF3TohNab8RXobI=
+		</data>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^</key>
