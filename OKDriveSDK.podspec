@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.frameworks ="SystemConfiguration", "CoreLocation", "CoreMotion"
   s.libraries = "z.1.1.3", "sqlite3"
   s.ios.vendored_frameworks = 'OKDriveSDK.framework'
-  s.dependency "FMDB",' ~> 2.5'
-  s.dependency "FMDB/SQLCipher",' ~> 3.3.1'
-  s.dependency "Qiniu",' ~> 7.0.16'
-  s.dependency "SSZipArchive",' ~> 1.0.1'
-  s.dependency "Reachability",' ~> 3.2'
-  s.dependency "MJExtension",' ~> 3.0.8'
+  s.dependency "FMDB",'~>2.5'
+  s.dependency "FMDB/SQLCipher",'~>3.3.1'
+  s.dependency "Qiniu",'~>7.0.16'
+  s.dependency "SSZipArchive",'~>1.0.1'
+  s.dependency "Reachability",'~>3.2'
+  s.dependency "MJExtension",'~>3.0.8'
 
 end
