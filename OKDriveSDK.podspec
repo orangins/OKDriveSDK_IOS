@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/*.h'
   s.frameworks ="SystemConfiguration", "CoreLocation", "CoreMotion"
   s.libraries = "z.1.1.3", "sqlite3"
-  s.ios.vendored_frameworks = 'OKDriveSDK.framework'
+  s.ios.vendored_frameworks = 'OKDriveSDK_IOS.framework'
   s.dependency "FMDB"
   s.dependency "FMDB/SQLCipher"
   s.dependency "Qiniu"
