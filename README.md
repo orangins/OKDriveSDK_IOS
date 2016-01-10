@@ -1,11 +1,10 @@
 OKDriveSDK_IOS
 ===
-- A fast 
 - 自动检测行程
 
 ## <a id="Installation"></a> Installation【安装】
 
-### From CocoaPods【使用CocoaPods】
+#### From CocoaPods【使用CocoaPods】
 
 ```ruby
 platform :ios, '8.0'
@@ -13,7 +12,7 @@ pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 ```
 
 # <a id="Examples"></a> Examples【示例】
-
+```objc
 #import "OKDriveConfig.h"
 #import "OKDriveSDK.h"
 
@@ -25,6 +24,6 @@ config.autoDrive = YES;
     
     
 }];
-
+```
 # <a id="Examples"></a>【注意事项】
 - TARGETS-->Capabilities-->Backgroound Modes-->Location updates
