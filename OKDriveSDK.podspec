@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/orangins/OKDriveSDK_IOS.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
   #s.source_files = 'Classes/*.*'
+  s.source_files = '*./{h,a}'
+
   #s.public_header_files = 'Classes/*.h'
   s.frameworks ="SystemConfiguration", "CoreLocation", "CoreMotion"
   s.libraries = "z.1.1.3", "sqlite3"
