@@ -6,7 +6,7 @@ OKDriveSDK_IOS
 
 #### From CocoaPods【使用CocoaPods】
 
-```ruby
+```objc
 platform :ios, '8.0'
 pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 ```
@@ -20,7 +20,7 @@ OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
 config.userId = @"userid";
 config.autoDrive = YES;
- OKDriveSDK *driveSDK = [OKDriveSDK instance];
+OKDriveSDK *driveSDK = [OKDriveSDK instance];
 [driveSDK setup:config callBack:^(BOOL success, NSError *error) {
 
 
