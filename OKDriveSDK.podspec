@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OKDriveSDK_IOS"
-  s.version          = "0.0.1"
+  s.version          = "1.0.0108"
   s.summary          = "OKDriveSDK IOS"
   s.homepage         = "https://github.com/orangins/OKDriveSDK_IOS"
   s.license          = 'Apache License, Version 2.0'
