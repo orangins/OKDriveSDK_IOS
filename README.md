@@ -13,8 +13,8 @@ pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 
 # <a id="Examples"></a> Examples【示例】
 ```objc
-#import "OKDriveConfig.h"
-#import "OKDriveSDK.h"
+#import <OKDriveLib/OKDriveConfig.h>
+#import <OKDriveLib/OKDriveSDK.h>
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
