@@ -21,7 +21,7 @@ config.appKey = @"appkey";
 config.userId = @"userid";
 config.autoDrive = YES;
 OKDriveSDK *driveSDK = [OKDriveSDK instance];
-[driveSDK setup:config callBack:^(BOOL success, NSError *error) {
+[driveSDK setup:config callBack:^(BOOL success, OKSetUpResult *res) {
 
 
 }];
@@ -29,7 +29,7 @@ OKDriveSDK *driveSDK = [OKDriveSDK instance];
 
 /*************手动开始行程************/
 config.autoDrive = NO;
-[driveSDK setup:config callBack:^(BOOL success, NSError *error) {
+[driveSDK setup:config callBack:^(BOOL success, OKSetUpResult *res) {
 
     if (success) {
         [driveSDK startDriving];
