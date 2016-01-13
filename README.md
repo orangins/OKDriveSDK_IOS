@@ -13,8 +13,8 @@ pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 ## 【示例】
 #### 自动检测行程
 ```objc
-#import "OKDriveConfig.h"
-#import "OKDriveSDK.h"
+#import <OKDriveLib/OKDriveConfig.h>
+#import <OKDriveLib/OKDriveSDK.h>
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
