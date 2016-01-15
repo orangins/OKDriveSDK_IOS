@@ -13,15 +13,16 @@ pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 ## 【示例】
 #### 自动检测行程
 ```objc
-#import <OKDriveLib/OKDriveConfig.h>
-#import <OKDriveLib/OKDriveSDK.h>
+#import "OKDriveConfig.h"
+#import "OKDriveSDK.h"
+#import "OKSetUpResult.h"
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
 config.userId = @"userid";
 config.autoDrive = YES;
 OKDriveSDK *driveSDK = [OKDriveSDK instance];
-[driveSDK setup:config callBack:^(BOOL success, NSError *error) {
+[driveSDK setup:config callBack:^(BOOL success, OKSetUpResult *result) {
 	if(success){
 		/*success code here*/
 	}
@@ -34,12 +35,13 @@ OKDriveSDK *driveSDK = [OKDriveSDK instance];
 ```objc
 #import "OKDriveConfig.h"
 #import "OKDriveSDK.h"
+#import "OKSetUpResult.h"
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
 config.userId = @"userid";
 config.autoDrive = NO; //这里需要设置为NO
-[driveSDK setup:config callBack:^(BOOL success, NSError *error) {
+[driveSDK setup:config callBack:^(BOOL success, OKSetUpResult *result) {
 	if(success){
 		/*success code here*/
 	}

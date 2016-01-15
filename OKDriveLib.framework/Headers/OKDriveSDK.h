@@ -6,7 +6,9 @@
 #import <Foundation/Foundation.h>
 #import "OKDriveConfig.h"
 
-typedef void (^OKdriveSetupHandler)(BOOL success, NSError *error);
+@class OKSetUpResult;
+
+typedef void (^OKdriveSetupHandler)(BOOL success, OKSetUpResult *res);
 
 @interface OKDriveSDK : NSObject
 + (OKDriveSDK *)instance;

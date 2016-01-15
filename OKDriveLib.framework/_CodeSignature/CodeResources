@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/OKDriveSDK.h</key>
 		<data>
-		DPUvDqJA+jP8wF3TohNab8RXobI=
+		Ha7VqfPJyvJC+Djygs34l1A0/FI=
+		</data>
+		<key>Headers/OKSetUpResult.h</key>
+		<data>
+		x3pzzbhV0q9UE3Xs5WQkj/XY2SM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gvlDEwvNPG7lpYu8GXLM+2l1GME=
+		rMr34t/rxiXGV/AbghmTwG+7ECI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -25,7 +29,11 @@
 		</data>
 		<key>Headers/OKDriveSDK.h</key>
 		<data>
-		DPUvDqJA+jP8wF3TohNab8RXobI=
+		Ha7VqfPJyvJC+Djygs34l1A0/FI=
+		</data>
+		<key>Headers/OKSetUpResult.h</key>
+		<data>
+		x3pzzbhV0q9UE3Xs5WQkj/XY2SM=
 		</data>
 	</dict>
 	<key>rules</key>
