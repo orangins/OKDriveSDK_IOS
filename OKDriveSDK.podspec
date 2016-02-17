@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OKDriveSDK_IOS"
-  s.version          = "0.0.1"
+  s.version          = "0.1.1"
   s.summary          = "OKDriveSDK IOS"
   s.homepage         = "https://github.com/orangins/OKDriveSDK_IOS"
   s.license          = 'Apache License, Version 2.0'
@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.dependency "FMDB",'~>2.5'
   s.dependency "FMDB/SQLCipher"
   s.dependency "Qiniu",'~>7.0.16'
-  s.dependency "SSZipArchive",'~>1.0.1'
   s.dependency "Reachability",'~>3.2'
   s.dependency "MJExtension",'~>3.0.8'
   s.requires_arc = true 
