@@ -20,6 +20,8 @@ Pod::Spec.new do |s|
   s.dependency "Qiniu",'~>7.0.16'
   s.dependency "Reachability",'~>3.2'
   s.dependency "MJExtension",'~>3.0.8'
+  s.dependency "FCUtility', :git => 'https://github.com/fjliang/FCUtility.git"
+
   s.requires_arc = true 
 
 end
