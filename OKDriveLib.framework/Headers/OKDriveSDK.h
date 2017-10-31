@@ -5,12 +5,15 @@
 
 #import <Foundation/Foundation.h>
 #import "OKDriveConfig.h"
-
-@class OKSetUpResult;
+#import "OKSetUpResult.h"
 
 typedef void (^OKdriveSetupHandler)(BOOL success, OKSetUpResult *res);
 
 @interface OKDriveSDK : NSObject
+
+@property(nonatomic, copy) void (^tripStartHandler)(void);
+@property(nonatomic, copy) void (^tripEndHandler)(void);
+
 + (OKDriveSDK *)instance;
 
 - (void)setup:(OKDriveConfig *)config callBack:(OKdriveSetupHandler)block;

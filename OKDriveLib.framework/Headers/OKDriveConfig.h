@@ -9,6 +9,7 @@
 @interface OKDriveConfig : NSObject
 @property(nonatomic, strong) NSString *appKey;
 @property(nonatomic, strong) NSString *userId;
+@property(nonatomic, strong) NSString *idfa;
 @property(nonatomic, assign) BOOL autoDrive;
 
 @end
