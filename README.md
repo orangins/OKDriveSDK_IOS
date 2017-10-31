@@ -31,6 +31,22 @@ OKDriveSDK *driveSDK = [OKDriveSDK instance];
 	}
 }];
 ```
+#### 行程状态
+```objc
+
+ driveSDK.tripStartHandler = ^() {
+
+        NSLog(@"tripStartHandler   行程开始");
+ 
+ };
+
+ driveSDK.tripEndHandler = ^() {
+
+        NSLog(@"tripEndHandler   行程结束");
+ 
+ };
+```
+
 #### 手动控制行程
 ```objc
 #import "OKDriveConfig.h"
