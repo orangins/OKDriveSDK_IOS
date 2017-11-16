@@ -13,9 +13,8 @@ pod 'OKDriveSDK_IOS', :git =>'https://github.com/orangins/OKDriveSDK_IOS.git'
 ## 【示例】
 #### 自动检测行程
 ```objc
-#import "OKDriveConfig.h"
-#import "OKDriveSDK.h"
-#import "OKSetUpResult.h"
+#import  <OKDriveLib/OKDriveSDK.h>
+#import  <OKDriveLib/OKDriveConfig.h>
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
@@ -30,28 +29,28 @@ OKDriveSDK *driveSDK = [OKDriveSDK instance];
 		/*failed code here*/
 	}
 }];
+
+<!-- 如果需要知道行程状态请设置代理 -->
+driveSDK.delegate = self;
+
 ```
 #### 行程状态
 ```objc
 
- driveSDK.tripStartHandler = ^() {
+- (void)onTripStart:(Trip *)trip {
+    NSLog(@"onTripStart   行程开始  status:%d", self.driveSDK.driveStatus);
+}
 
-        NSLog(@"tripStartHandler   行程开始");
- 
- };
+- (void)onTripEnd:(Trip *)trip {
+    NSLog(@"onTripEnd   行程结束   status:%d", self.driveSDK.driveStatus);
+}
 
- driveSDK.tripEndHandler = ^() {
-
-        NSLog(@"tripEndHandler   行程结束");
- 
- };
 ```
 
 #### 手动控制行程
 ```objc
-#import "OKDriveConfig.h"
-#import "OKDriveSDK.h"
-#import "OKSetUpResult.h"
+#import  <OKDriveLib/OKDriveSDK.h>
+#import  <OKDriveLib/OKDriveConfig.h>
 
 OKDriveConfig *config = [[OKDriveConfig alloc] init];
 config.appKey = @"appkey";
@@ -79,6 +78,7 @@ config.autoDrive = NO; //这里需要设置为NO
 ```
 ## 【注意事项】
 - TARGETS-->Capabilities-->Backgroound Modes-->Location updates
+- Privacy - Location Always Usage Description   Privacy - Location When In Use Usage Description    Privacy - Location Always and When In Use Usage Description  这三个都需要加到配置里边
 - App描述中需要加入关于电池的说明，例如“我们使用手机定位技术在后台运行并跟踪您的驾驶行为，可能会显著增加电量消耗，因此我们建议您在夜间或非开车时间对手机充电”
 - App审核信息-->备注，需要说明为什么需要定位服务
 

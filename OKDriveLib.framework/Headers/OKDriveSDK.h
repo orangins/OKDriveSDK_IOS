@@ -6,13 +6,33 @@
 #import <Foundation/Foundation.h>
 #import "OKDriveConfig.h"
 #import "OKSetUpResult.h"
+#import "Trip.h"
 
 typedef void (^OKdriveSetupHandler)(BOOL success, OKSetUpResult *res);
 
+typedef NS_ENUM(NSInteger, DriveStatus) {
+    DriveStatusWait,
+    DriveStatusRegisterRegion,
+    DriveStatusCheckSpeed,
+    DriveStatusDriving,
+    DriveStatusUpload
+
+};
+
+@protocol OKDriveEventDelegate <NSObject>
+
+@optional
+
+- (void)onTripStart:(Trip *)trip;
+
+- (void)onTripEnd:(Trip *)trip;
+
+
+@end
+
 @interface OKDriveSDK : NSObject
 
-@property(nonatomic, copy) void (^tripStartHandler)(void);
-@property(nonatomic, copy) void (^tripEndHandler)(void);
+@property(nonatomic, weak) id <OKDriveEventDelegate> delegate;
 
 + (OKDriveSDK *)instance;
 
