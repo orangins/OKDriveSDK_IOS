@@ -4,9 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BaseModel.h"
 
-@interface Trip : BaseModel
+@interface Trip : NSObject
+@property(nonatomic, assign) int64_t id;
+
 @property(nonatomic, copy) NSString *driverId;
 @property(nonatomic, assign) int64_t timestamp;
 @property(nonatomic, assign) int64_t timestampEnd;
@@ -42,7 +43,7 @@
 @property(nonatomic, assign) NSInteger tripEnd;
 
 
- @end
+@end
 
 
 
