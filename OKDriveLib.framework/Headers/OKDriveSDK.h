@@ -14,9 +14,11 @@ typedef NS_ENUM(NSInteger, DriveStatus) {
     DriveStatusWait,
     DriveStatusRegisterRegion,
     DriveStatusCheckSpeed,
+//#ifdef kV2Test
+//    DriveStatusCheckWalking,
+//#endif
     DriveStatusDriving,
     DriveStatusUpload
-
 };
 
 @protocol OKDriveEventDelegate <NSObject>
@@ -33,6 +35,8 @@ typedef NS_ENUM(NSInteger, DriveStatus) {
 @interface OKDriveSDK : NSObject
 
 @property(nonatomic, weak) id <OKDriveEventDelegate> delegate;
+
+@property(nonatomic, assign) DriveStatus driveStatus;
 
 + (OKDriveSDK *)instance;
 

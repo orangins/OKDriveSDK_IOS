@@ -12,27 +12,15 @@
 @property(nonatomic, assign) int64_t timestamp;
 @property(nonatomic, assign) int64_t timestampEnd;
 @property(nonatomic, assign) double driveTime;
-@property(nonatomic, copy) NSString *timezone;
-@property(nonatomic, copy) NSString *tripType;
 @property(nonatomic, copy) NSString *startTime;
 @property(nonatomic, copy) NSString *endTime;
 @property(nonatomic, assign) NSInteger autoStart;
-//最大空闲时间 -1
-@property(nonatomic, assign) NSInteger maxIdleTimeSeconds;
-//motion 频率
-@property(nonatomic, assign) NSInteger accelerometerFrequency;
 //平均速度
 @property(nonatomic, assign) double averageSpeed;
 //距离
 @property(nonatomic, assign) double distance;
-//最小速度 0
-@property(nonatomic, assign) double minDriveSpeedMPS;
-//行程ID  @""
-@property(nonatomic, copy) NSString *trackingId;
 //系统版本
 @property(nonatomic, copy) NSString *deviceVersion;
-//@""
-@property(nonatomic, copy) NSString *sessionId;
 //设备模型  @"DEVICE"
 @property(nonatomic, copy) NSString *deviceMode;
 //设备类型 @"ipone"
@@ -42,6 +30,15 @@
 
 @property(nonatomic, assign) NSInteger tripEnd;
 
+@property(nonatomic, copy) NSString *applicationId;
+@property(nonatomic, copy) NSString *tripType;
+@property(nonatomic, copy) NSString *timezone;
+//屏幕分辨率
+@property(nonatomic, copy) NSString *features;
+//trip数据格式版本
+@property(nonatomic, copy) NSString *tripVersion;
+
+@property(nonatomic, assign) NSInteger isUpload;
 
 @end
 
