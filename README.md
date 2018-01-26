@@ -79,7 +79,8 @@ config.autoDrive = NO; //这里需要设置为NO
 - Privacy - Location Always Usage Description  
 - Privacy - Location When In Use Usage Description   
 - Privacy - Location Always and When In Use Usage Description 
-- 这三个都需要加到配置里边
+- Privacy - Motion Usage Description
+- 这四个都需要加到配置里边
 - App描述中需要加入关于电池的说明，例如“我们使用手机定位技术在后台运行并跟踪您的驾驶行为，可能会显著增加电量消耗，因此我们建议您在夜间或非开车时间对手机充电”
 - App审核信息-->备注，需要说明为什么需要定位服务
 
