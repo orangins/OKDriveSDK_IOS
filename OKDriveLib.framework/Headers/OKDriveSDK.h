@@ -14,9 +14,6 @@ typedef NS_ENUM(NSInteger, DriveStatus) {
     DriveStatusWait,
     DriveStatusRegisterRegion,
     DriveStatusCheckSpeed,
-//#ifdef kV2Test
-//    DriveStatusCheckWalking,
-//#endif
     DriveStatusDriving,
     DriveStatusUpload
 };

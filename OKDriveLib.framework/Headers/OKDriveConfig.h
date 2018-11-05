@@ -11,5 +11,13 @@
 @property(nonatomic, strong) NSString *userId;
 @property(nonatomic, strong) NSString *idfa;
 @property(nonatomic, assign) BOOL autoDrive;
+/***
+ * 上传crash日志，默认 NO
+ */
+@property(nonatomic, assign) BOOL uploadCrashLog;
+/**
+ * crash日志id，默认userId
+ */
+@property(nonatomic, strong) NSString *crashLogId;
 
 @end
